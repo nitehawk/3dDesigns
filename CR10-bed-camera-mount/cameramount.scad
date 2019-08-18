@@ -77,11 +77,19 @@ module mount() {
             translate([-(33.5-aw)/2,0,base]) difference() {
                 cube([33.5,at+10,6]);
                 translate([(33.5-22)/2,at+1,0]) cube([22,9,7]);
-                #translate([0,at+9,3]) rotate([0,90,0]) cylinder(h=33.5, d=2.35);
+                #translate([0,at+8.9,3]) rotate([0,90,0]) cylinder(h=33.5, d=2.35);
             }
         }
     }
     // Tripod (1/4"x20) mount
     if (mounttripod) {
+        union() {
+            cube([aw, at, base]);
+            translate([0,0,base]) difference() {
+                cube([aw,at+15,4]);
+                translate([1,at+1,0]) cube([aw-2,13,2]);
+                #translate([aw/2,at+7.5,1]) cylinder(h=6, d=6.35, center=true);
+            }
+        }
     }
 }
