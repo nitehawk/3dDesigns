@@ -1,3 +1,11 @@
+// OpenSCAD design by Nitehawk
+// Twitter: @nite97m
+// Github: @Nitehawk
+// Thingiverse: @Nitehawk
+//
+// Design based on: https://www.thingiverse.com/thing:2788335
+// and:  https://www.thingiverse.com/thing:2766979
+
 // We want our holes to be nice and smooth
 $fn = 30;
 
